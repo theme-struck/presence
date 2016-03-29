@@ -1,0 +1,614 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:300italic,300,400,400italic,700,700italic,900,900italic);
+/****************************
+*   FOR RESPONSIVENESS      *
+****************************/
+::selection {
+  background: #4f5362;
+  /* WebKit/Blink Browsers */
+  color: #fff;
+}
+::-moz-selection {
+  background: #4f5362;
+  /* Gecko Browsers */
+  color: #fff;
+}
+html {
+  font-size: 14px;
+}
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 17px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    font-size: 1em;
+    margin-bottom: 1.8em;
+  }
+}
+/****************************
+*      BODY DEFAULTS        *
+****************************/
+body {
+  font-size: 1em;
+  font-family: 'Merriweather', serif;
+  line-height: 1.6;
+  background: #ffffff;
+  color: #505362;
+}
+a {
+  color: #325d88;
+}
+a:hover {
+  text-decoration: none;
+  color: #4076ad;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.title {
+  padding-bottom: 10px;
+  border-bottom: 4px solid #f0f0f0;
+}
+.form-control {
+  border-radius: 0;
+}
+/****************************
+*      Buttons        *
+****************************/
+.btn {
+  border-radius: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.btn i {
+  position: relative;
+  top: -2px;
+}
+.btn i.left {
+  margin-right: 10px;
+}
+.btn i.right {
+  margin-left: 10px;
+}
+i.left {
+  margin-right: 10px;
+}
+i.right {
+  margin-left: 10px;
+}
+.btn.text-left {
+  text-align: left;
+}
+.btn-brand {
+  background: #325d88;
+  color: #fff;
+}
+.btn-brand:hover {
+  color: #fff;
+  background: #244363;
+}
+.btn-dark {
+  background: #272727;
+  color: #fff;
+}
+.btn-dark:hover {
+  color: #fff;
+  background: #244363;
+}
+.btn-red {
+  background: #4f5362;
+  color: #fff;
+}
+.btn-red:hover {
+  color: #fff;
+  background: #383b46;
+}
+.btn-alt {
+  background: #f0f0f0;
+  color: #222;
+}
+.btn-alt:hover {
+  color: #fff;
+  background: #244363;
+}
+/****************************
+*      Background Colors        *
+****************************/
+.bk-primary {
+  background: #325d88;
+}
+.bk-success {
+  background: #93c54b;
+}
+.bk-warning {
+  background: #f47c3c;
+}
+.bk-danger {
+  background: #d9534f;
+}
+.bk-info {
+  background: #29abe0;
+}
+.bk-white,
+.bk-light {
+  background: #fff;
+}
+.bk-brand {
+  background: #325d88;
+}
+.bk-brand-2 {
+  background: #505362;
+}
+.bk-brand-3 {
+  background: #25292a;
+}
+.bk-dark {
+  background: #222;
+}
+.bk-blue {
+  background: #0010ce;
+}
+.bk-alt {
+  background: #f7f7f7;
+}
+.bk-ghost {
+  background: transparent;
+}
+.bk-img {
+  position: relative;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../../img/desk-technology-music-white.jpg);
+}
+.bk-fixed {
+  background-attachment: fixed;
+}
+.hr-green {
+  height: 2px;
+  background: #325d88;
+}
+.hr-grey {
+  height: 2px;
+  background: #f0f0f0;
+}
+.hr-dashed {
+  background-color: transparent;
+  border-top: 1px dotted #edf0f5;
+  color: transparent;
+  height: 1px;
+  margin: 20px 0;
+}
+.panel {
+  overflow: hidden;
+}
+/****************************
+*      Border        *
+****************************/
+.brdr {
+  border: 1px solid #f0f0f0;
+}
+/****************************
+*      Text size color        *
+****************************/
+.font-one {
+  font-family: 'Open Sans', sans-serif;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-bolder {
+  font-weight: 900;
+}
+.text-normal {
+  font-weight: normal;
+}
+.text-thin {
+  font-weight: 100;
+}
+.text-lowercase {
+  text-transform: none;
+}
+.text-sm {
+  font-size: 13px;
+}
+.text-md {
+  font-size: 16px;
+}
+.text-lg {
+  font-size: 18px;
+}
+.text-xl {
+  font-size: 1.6em;
+}
+.text-2x {
+  font-size: 2em;
+}
+.text-3x {
+  font-size: 2.4em;
+}
+.text-4x {
+  font-size: 3em;
+}
+.text-5x {
+  font-size: 3.6em;
+}
+.text-white,
+.text-light {
+  color: #fff !important;
+}
+.link-white a {
+  color: #fff;
+}
+.text-grey {
+  color: #ccc;
+}
+.text-dgrey {
+  color: #818181;
+}
+.text-dark {
+  color: rgba(0, 0, 0, 0.71);
+}
+.text-brand {
+  color: #325d88;
+}
+.text-yellow {
+  color: #ffff00;
+}
+.lh-2x {
+  line-height: 1.6;
+}
+.title .line {
+  display: inline-block;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #222;
+}
+/****************************
+*       Margins         *
+****************************/
+.mt {
+  margin-top: 18px;
+}
+.mt-0x {
+  margin-top: 0 !important;
+}
+.mt-2x {
+  margin-top: 36px;
+}
+.mt-3x {
+  margin-top: 54px;
+}
+.mt-4x {
+  margin-top: 90px;
+}
+.mt-5x {
+  margin-top: 144px;
+}
+.mb {
+  margin-bottom: 18px;
+}
+.mb-0x {
+  margin-bottom: 0 !important;
+}
+.mb-2x {
+  margin-bottom: 36px;
+}
+.mb-3x {
+  margin-bottom: 54px;
+}
+.mb-4x {
+  margin-bottom: 90px;
+}
+.mb-5x {
+  margin-bottom: 144px;
+}
+.pt {
+  padding-top: 18px;
+}
+.pt-2x {
+  padding-top: 36px;
+}
+.pt-3x {
+  padding-top: 54px;
+}
+.pt-4x {
+  padding-top: 90px;
+}
+.pt-5x {
+  padding-top: 144px;
+}
+.pb {
+  padding-bottom: 18px;
+}
+.pb-2x {
+  padding-bottom: 36px;
+}
+.pb-3x {
+  padding-bottom: 54px;
+}
+.pb-4x {
+  padding-bottom: 90px;
+}
+.pb-5x {
+  padding-bottom: 144px;
+}
+/* Content boxes */
+.content-box {
+  padding: 15px;
+}
+.block-anchor {
+  display: block;
+}
+.mapArea {
+  margin-bottom: 15px;
+  float: none;
+  clear: both;
+  width: 100%;
+  position: relative;
+  padding-bottom: 40%;
+  padding-top: 25px;
+  height: 0;
+}
+.mapArea #map-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/****************************
+*       Content Typography         *
+****************************/
+.content-format {
+  line-height: 1.6em;
+  font-weight: 400;
+  letter-spacing: .01em;
+  font-style: normal;
+  word-wrap: break-word;
+}
+.content-format .h1,
+.content-format .h2,
+.content-format .h3,
+.content-format .h4,
+.content-format .h5,
+.content-format .h6,
+.content-format h1,
+.content-format h2,
+.content-format h3,
+.content-format h4,
+.content-format h5,
+.content-format h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-weight: bold;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 40px;
+}
+.content-format .h1 a,
+.content-format .h2 a,
+.content-format .h3 a,
+.content-format .h4 a,
+.content-format .h5 a,
+.content-format .h6 a,
+.content-format h1 a,
+.content-format h2 a,
+.content-format h3 a,
+.content-format h4 a,
+.content-format h5 a,
+.content-format h6 a {
+  font-size: inherit;
+}
+.content-format .h2,
+.content-format h2 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 4px solid #f0f0f0;
+}
+.content-format .h3,
+.content-format h3 {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-bottom: 4px;
+  margin: 1em 0 0.5em;
+}
+.content-format .h4,
+.content-format h4 {
+  font-size: 1.7em;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.content-format .h5,
+.content-format h5 {
+  font-size: 1.5em;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.content-format .h6,
+.content-format h6 {
+  font-size: 1.3em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.content-format strong {
+  font-weight: bold;
+}
+.content-format ul:not(.social-awesome) {
+  list-style: disc outside;
+  margin: 1.714285714rem 0 1.714285714rem;
+  line-height: 1.714285714;
+}
+.content-format ul:not(.social-awesome) li {
+  margin: 0 0 0 36px;
+  margin: 0 1rem 0 2.571428571rem;
+}
+.content-format ul:not(.social-awesome).list-unstyled {
+  list-style: none;
+}
+.content-format ul:not(.social-awesome).list-unstyled li {
+  margin: 0 0 0 24px;
+}
+.content-format em {
+  font-style: italic;
+}
+.content-format p {
+  margin-bottom: 1.8em;
+}
+.content-format figure {
+  margin-bottom: 42px;
+}
+.content-format figure .caption {
+  color: #999;
+  font-size: 14px;
+}
+.content-format img {
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+.content-format .fa {
+  color: #325d88;
+  margin-right: 10px;
+}
+.content-format blockquote {
+  border-left: 4px solid #c3c3c3;
+  border-left: 4px solid rgba(51, 51, 51, 0.17);
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 1.2em;
+  font-style: italic;
+  line-height: 1.6667;
+  margin-bottom: 1em;
+  padding-left: 0.7778em;
+}
+.content-format blockquote.double-quote {
+  border-left: none;
+  padding-left: 1em;
+}
+.content-format pre {
+  background: #fff;
+  border: 1px solid #ededed;
+  color: #666;
+  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-size: .9em;
+  line-height: 1.714285714;
+  margin: 24px 0;
+  margin: 1.714285714rem 0;
+  overflow: auto;
+}
+.content-format ol {
+  margin: 24px 0 24px;
+  margin: 1.714285714rem 0 1.714285714rem;
+  line-height: 1.714285714;
+  list-style: decimal outside;
+}
+.content-format img.wp-smiley,
+.content-format img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+/*
+ * Theme Struck - Presence - One Page Bootstrap portfolio theme by Themestruck.com (http://themestruck.com)
+ * Code licensed under the MIT
+ * For details, see #
+ */
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo {
+  max-width: 180px;
+}
+.hero {
+  min-height: 100vh;
+}
+/* Pace */
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.pace-inactive {
+  display: none;
+}
+.pace .pace-progress {
+  background: #29d;
+  position: fixed;
+  z-index: 2000;
+  top: 0;
+  right: 100%;
+  width: 100%;
+  height: 2px;
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
